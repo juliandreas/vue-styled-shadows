@@ -1,5 +1,5 @@
 <template>
-  <div class="vue-img-pattern">
+  <div class="vue-img-pattern" style="display: flex; position: relative;">
     <div :style="patternStyle" />
     <div :style="containerStyle">
       <slot></slot>
@@ -46,8 +46,8 @@ export default {
         'background-color': this.bgColor,
         'background-size': `${this.bgSize}px ${this.bgSize}px`,
         'background-position': `${0}px ${0}px, ${this.bgSize / 2}px ${this.bgSize / 2}px`,
-        'background-image': `radial-gradient(#212121 ${this.dotSize}px, transparent ${this.dotSize}px),
-        radial-gradient(#e5d335 ${this.dotSize}px, transparent ${this.dotSize}px)`
+        'background-image': `radial-gradient(#504D2E ${this.dotSize}px, transparent ${this.dotSize}px),
+        radial-gradient(#504D2E ${this.dotSize}px, transparent ${this.dotSize}px)`
       };
 
       if (this.left || (!this.left && !this.right)) {
@@ -79,10 +79,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.vue-img-pattern {
-  position: relative;
-  display: flex;
-}
-</style>

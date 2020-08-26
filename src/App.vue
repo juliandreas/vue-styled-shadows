@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div style="width: 50%">
-      <VueImgPattern right margin="50" bg-color="#e53935" bg-size="100">
+      <VueImgPattern right margin="50" bg-size="40" dot-size="3">
         <img
           src="https://images.unsplash.com/photo-1529426944611-e8342e2e91c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
           alt=""
@@ -32,6 +32,8 @@ body {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   color: #000;
   height: 100vh;
