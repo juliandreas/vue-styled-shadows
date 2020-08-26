@@ -1,11 +1,29 @@
 {
   "name": "vue-img-pattern",
   "version": "0.1.0",
-  "private": true,
+  "author": "Julian Lagerberg <juliandreas@hey.com>",
+  "private": false,
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juliandreas/vue-img-pattern"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliandreas/vue-img-pattern.git"
+  },
+  "main": "dist/vue-img-pattern.esm.js",
+  "types": "src/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "rollup -c",
+    "lint": "vue-cli-service lint",
+    "demo": "vue-cli-service build",
+    "deploy": "npm run build & npm publish",
+    "beta": "npm run build & npm publish --tag beta"
   },
   "peerDependencies": {
     "vue": "^2.6.11"
@@ -49,5 +67,16 @@
     "> 1%",
     "last 2 versions",
     "not dead"
+  ],
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue.js",
+    "vue2",
+    "pattern",
+    "csspattern",
+    "background",
+    "image",
+    "library"
   ]
 }

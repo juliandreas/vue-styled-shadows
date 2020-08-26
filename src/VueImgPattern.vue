@@ -1,5 +1,5 @@
 <template>
-  <div class="vue-img-pattern" style="display: flex; position: relative;">
+  <div class="vue-img-pattern" style="display: flex; position: relative; overflow: hidden;">
     <div :style="patternStyle" />
     <div :style="containerStyle">
       <slot></slot>
@@ -20,19 +20,15 @@ export default {
     },
     margin: {
       type: [Number, String],
-      default: 60
-    },
-    bgColor: {
-      type: String,
-      default: 'transparent'
+      default: 50
     },
     bgSize: {
       type: [Number, String],
       default: 40
     },
-    dotSize: {
+    patternSize: {
       type: [Number, String],
-      default: 8
+      default: 3
     },
     color1: {
       type: String,
@@ -42,9 +38,17 @@ export default {
       type: String,
       default: 'transparent'
     },
+    bgColor: {
+      type: String,
+      default: 'transparent'
+    },
     degree: {
       type: [Number, String],
       default: '45'
+    },
+    reverse: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -61,13 +65,13 @@ export default {
       };
 
       if (this.type === 'dots') {
-        styles.backgroundImage = `radial-gradient(${this.color1} ${this.dotSize}px, transparent ${this.dotSize}px),
-        radial-gradient(${this.color2} ${this.dotSize}px, transparent ${this.dotSize}px)`;
+        styles.backgroundImage = `radial-gradient(${this.color1} ${this.patternSize}px, transparent ${this.patternSize}px),
+        radial-gradient(${this.color2} ${this.patternSize}px, transparent ${this.patternSize}px)`;
       } else if (this.type === 'lines') {
-        styles.backgroundImage = `linear-gradient(${this.color1} ${this.dotSize}px, transparent ${this.dotSize}px),
-        linear-gradient(${this.color2} ${this.dotSize}px, transparent ${this.dotSize}px)`;
+        styles.backgroundImage = `linear-gradient(${this.color1} ${this.patternSize}px, transparent ${this.patternSize}px),
+        linear-gradient(${this.color2} ${this.patternSize}px, transparent ${this.patternSize}px)`;
       } else if (this.type === 'diagonal') {
-        styles.backgroundImage = `repeating-linear-gradient(${this.degree}deg, ${this.color1} 0, ${this.color1} ${this.dotSize}px, transparent 0, transparent 50%)`;
+        styles.backgroundImage = `repeating-linear-gradient(${this.degree}deg, ${this.color1} 0, ${this.color1} ${this.patternSize}px, transparent 0, transparent 50%)`;
       }
 
       if (this.position === 'bottomLeft') {
@@ -88,9 +92,13 @@ export default {
     },
     containerStyle() {
       const styles = {
-        'z-index': '1',
-        width: '100%'
+        width: '100%',
+        height: '100%'
       };
+
+      if (!this.reverse) {
+        styles.zIndex = '1';
+      }
 
       if (this.position === 'bottomLeft') {
         styles.marginLeft = this.margin + 'px';
