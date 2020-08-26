@@ -81,7 +81,7 @@ export default {
     bgSize: '40',
     patternSize: '3',
     color1: '#504D2E',
-    color2: '#B4D455',
+    color2: '#504D2E',
     bgColor: 'transparent',
     degree: '45',
     reverse: false
