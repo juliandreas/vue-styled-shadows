@@ -1,7 +1,14 @@
 <template>
   <div id="app">
     <div style="width: 50%">
-      <VueImgPattern right margin="50" bg-size="40" dot-size="3">
+      <VueImgPattern
+        position="bottomLeft"
+        margin="50"
+        bg-size="40"
+        dot-size="3"
+        color1="#504D2E"
+        color2="#B4D455"
+      >
         <img
           src="https://images.unsplash.com/photo-1529426944611-e8342e2e91c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
           alt=""
