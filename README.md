@@ -53,18 +53,18 @@ You can also add more props to customize things like type, color and size etc.
 
 ## Properties
 
-| Name        | Type             | Default       | Description                                       |
-| ----------- | ---------------- | ------------- | ------------------------------------------------- |
-| type        | String           | `dots`        | Initial state of the toggle button                |
-| position    | String           | `bottomLeft`  | Toggle does not react on mouse or keyboard events |
-| margin      | [String, Number] | `50`          | Reverse toggle to Right to Left                   |
-| bgSize      | [String, Number] | `40`          | Height of the toggle in `px`                      |
-| patternSize | [String, Number] | `3`           | Width of the toggle in `px`                       |
-| color1      | String           | `#504D2E`     | Optional text when the toggle is checked          |
-| color2      | String           | `transparent` | Optional text when the toggle is unchecked        |
-| bgColor     | String           | `transparent` | Background color when the toggle is checked       |
-| degree      | [String, Number] | `45`          | Background color when the toggle is unchecked     |
-| reverse     | Boolean          | `false`       | Text color when the toggle is checked             |
+| Name        | Type             | Default       | Description                                                     |
+| ----------- | ---------------- | ------------- | --------------------------------------------------------------- |
+| type        | String           | `dots`        | Type of pattern [dots, lines, diagonal]                         |
+| position    | String           | `bottomLeft`  | Position of shadow [bottomLeft, bottomRight, topLeft, topRight] |
+| margin      | [String, Number] | `50`          | Margin between image and shadow                                 |
+| bgSize      | [String, Number] | `40`          | Background size                                                 |
+| patternSize | [String, Number] | `3`           | Pattern size                                                    |
+| color1      | String           | `#504D2E`     | Main color of pattern                                           |
+| color2      | String           | `transparent` | Secondary color of pattern (Only valid for dots and lines)      |
+| bgColor     | String           | `transparent` | Background color                                                |
+| degree      | [String, Number] | `45`          | Degree (Only valid for diagonal)                                |
+| reverse     | Boolean          | `false`       | Reverse z-index between pattern and image                       |
 
 ### License
 
