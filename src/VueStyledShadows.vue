@@ -1,5 +1,5 @@
 <template>
-  <div class="vue-img-pattern" style="display: flex; position: relative; overflow: hidden;">
+  <div class="vue-styled-shadows" style="display: flex; position: relative; overflow: hidden;">
     <div :style="patternStyle" />
     <div :style="containerStyle">
       <slot></slot>

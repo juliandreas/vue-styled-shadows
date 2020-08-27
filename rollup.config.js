@@ -8,7 +8,7 @@ export default [
     input: 'src/wrapper.js',
     output: {
       format: 'esm',
-      file: 'dist/vue-img-pattern.esm.js'
+      file: 'dist/vue-styled-shadows.esm.js'
     },
     plugins: [
       vue({

@@ -1,15 +1,15 @@
-import VueImgPattern from './VueImgPattern.vue';
+import VueStyledShadows from './VueStyledShadows.vue';
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.component('VueImgPattern', VueImgPattern);
+  Vue.component('VueStyledShadows', VueStyledShadows);
 }
 
 // Create module definition for Vue.use()
 const plugin = {
-  install
+  install,
 };
 
 // Auto-install when vue is found (eg. in browser via <script> tag)
@@ -24,4 +24,4 @@ if (GlobalVue) {
 }
 
 // To allow use as module (npm/webpack/etc.) export component
-export default VueImgPattern;
+export default VueStyledShadows;

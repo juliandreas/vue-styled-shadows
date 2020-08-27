@@ -1,6 +1,6 @@
-<h1 align="center">Vue Image Pattern</h1>
+<h1 align="center">Vue Styled Shadows</h1>
 <p align="center">
-Image background patterns for images. Supports SSR and IE11!
+Styled shadows for images. Supports SSR and IE11!
 </p>
 
 <p align="center">
@@ -19,16 +19,16 @@ Image background patterns for images. Supports SSR and IE11!
 ## Installation
 
 ```
-npm i vue-img-pattern
+npm i vue-styled-shadows
 ```
 
 ### Import
 
 ```javascript
 import Vue from 'vue';
-import VueImgPattern from 'vue-img-pattern';
+import VueStyledShadows from 'vue-styled-shadows';
 
-Vue.component('VueImgPattern', VueImgPattern);
+Vue.component('VueStyledShadows', VueStyledShadows);
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ Vue.component('VueImgPattern', VueImgPattern);
 The toggle is very easy to use out of the box. The bare minimum for it to work is a `@click`-function and a `:value`-prop.
 
 ```html
-<VueImgPattern @click="value = !value" :value="value" />
+<VueStyledShadows @click="value = !value" :value="value" />
 ```
 
 ## Options
@@ -44,7 +44,7 @@ The toggle is very easy to use out of the box. The bare minimum for it to work i
 You can also add more props to customize things like color and width/height.
 
 ```html
-<VueImgPattern
+<VueStyledShadows
   @click="value = !value"
   :value="value"
   height="30"

@@ -1,1 +1,1 @@
-declare module 'vue-img-pattern';
+declare module 'vue-styled-shadows';

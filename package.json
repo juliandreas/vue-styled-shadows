@@ -1,17 +1,17 @@
 {
-  "name": "vue-img-pattern",
+  "name": "vue-styled-shadows",
   "version": "0.1.0",
   "author": "Julian Lagerberg <juliandreas@hey.com>",
   "private": false,
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/juliandreas/vue-img-pattern"
+    "url": "https://github.com/juliandreas/vue-styled-shadows"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juliandreas/vue-img-pattern.git"
+    "url": "git+https://github.com/juliandreas/vue-styled-shadows.git"
   },
-  "main": "dist/vue-img-pattern.esm.js",
+  "main": "dist/vue-styled-shadows.esm.js",
   "types": "src/index.d.ts",
   "files": [
     "dist",

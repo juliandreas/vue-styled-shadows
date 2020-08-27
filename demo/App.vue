@@ -46,7 +46,7 @@
       </div>
 
       <div class="block">
-        <VueImgPattern
+        <VueStyledShadows
           :type="type"
           :position="position"
           :margin="margin"
@@ -62,7 +62,7 @@
             src="https://images.unsplash.com/photo-1529426944611-e8342e2e91c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
             alt=""
           />
-        </VueImgPattern>
+        </VueStyledShadows>
       </div>
     </section>
   </div>
@@ -81,8 +81,8 @@ export default {
     color2: '#504D2E',
     bgColor: 'transparent',
     degree: '45',
-    reverse: false
-  })
+    reverse: false,
+  }),
 };
 </script>
 
@@ -121,7 +121,7 @@ img {
   // clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 
-/* .vue-img-pattern {
+/* .vue-styled-shadows {
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 } */
 </style>
