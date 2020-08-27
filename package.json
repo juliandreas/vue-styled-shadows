@@ -1,6 +1,6 @@
 {
   "name": "vue-styled-shadows",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Julian Lagerberg <juliandreas@hey.com>",
   "private": false,
   "license": "MIT",
@@ -13,6 +13,7 @@
     "url": "git+https://github.com/juliandreas/vue-styled-shadows.git"
   },
   "main": "dist/vue-styled-shadows.esm.js",
+  "style": "dist/vue-styled-shadows.ssr.css",
   "types": "src/index.d.ts",
   "files": [
     "dist",
@@ -43,6 +44,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.14.1",
     "rollup": "^2.26.5",
+    "rollup-plugin-css-only": "^2.1.0",
     "rollup-plugin-filesize": "^9.0.2",
     "rollup-plugin-vue": "^5.1.9",
     "sass-loader": "^10.0.1",

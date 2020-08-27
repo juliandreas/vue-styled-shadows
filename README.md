@@ -1,6 +1,6 @@
 <h1 align="center">Vue Styled Shadows</h1>
 <p align="center">
-Styled shadows for images. Supports SSR and IE11!
+Styled shadows for images. Supports IE11!
 </p>
 
 <p align="center">
