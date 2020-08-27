@@ -43,7 +43,7 @@
     "node-sass": "^4.14.1",
     "rollup": "^2.26.5",
     "rollup-plugin-filesize": "^9.0.2",
-    "rollup-plugin-vue": "^6.0.0-beta.10",
+    "rollup-plugin-vue": "^5.1.9",
     "sass-loader": "^10.0.1",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
