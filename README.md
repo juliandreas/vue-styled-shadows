@@ -3,17 +3,17 @@
 Styled shadows for images. Supports SSR and IE11!
 </p>
 
-<p align="center">
+<!-- <p align="center">
 <a href="https://www.npmjs.com/package/vue-toggles"><img src="https://img.shields.io/npm/v/vue-toggles.svg?style=flat-square"/> <img src="https://img.shields.io/npm/dt/vue-toggles.svg?style=flat-square"/></a> <a href="https://vuejs.org/"><img src="https://img.shields.io/badge/vue-2.x-brightgreen.svg?style=flat-square"/></a>
 </p>
 
 <p align="center">
-<!-- <img src="./vue-toggles.jpg" alt="Vue Toggles Logo"/> -->
-</p>
+<img src="./vue-toggles.jpg" alt="Vue Toggles Logo"/>
+</p> -->
 
-## Demo
+<!-- ## Demo
 
-<!-- - [Demo](https://vue-toggles.netlify.app/)
+- [Demo](https://vue-toggles.netlify.app/)
 - [CodeSandbox](https://codesandbox.io/s/vue-toggles-mkkp4?file=/src/App.vue) -->
 
 ## Installation
@@ -33,27 +33,22 @@ Vue.component('VueStyledShadows', VueStyledShadows);
 
 ## Usage
 
-The toggle is very easy to use out of the box. The bare minimum for it to work is a `@click`-function and a `:value`-prop.
+You can use the library without any props and it will use the default settings (see properties below).
 
 ```html
-<VueStyledShadows @click="value = !value" :value="value" />
+<VueStyledShadows>
+  <img />
+</VueStyledShadows>
 ```
 
 ## Options
 
-You can also add more props to customize things like color and width/height.
+You can also add more props to customize things like type, color and size etc.
 
 ```html
-<VueStyledShadows
-  @click="value = !value"
-  :value="value"
-  height="30"
-  width="90"
-  checkedText="On"
-  uncheckedText="Off"
-  checkedBg="#b4d455"
-  uncheckedBg="lightgrey"
-/>
+<VueStyledShadows type="lines" position="bottomRight" margin="50" patternSize="3">
+  <img />
+</VueStyledShadows>
 ```
 
 ## Properties

@@ -81,8 +81,8 @@ export default {
     color2: '#504D2E',
     bgColor: 'transparent',
     degree: '45',
-    reverse: false,
-  }),
+    reverse: false
+  })
 };
 </script>
 
