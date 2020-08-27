@@ -63,18 +63,18 @@ You can also add more props to customize things like type, color and size etc.
 
 ## Properties
 
-| Name        | Type             | Default       | Description                                                     |
-| ----------- | ---------------- | ------------- | --------------------------------------------------------------- |
-| type        | String           | `dots`        | Type of pattern [dots, lines, diagonal]                         |
-| position    | String           | `bottomLeft`  | Position of shadow [bottomLeft, bottomRight, topLeft, topRight] |
-| margin      | [String, Number] | `50`          | Margin between image and shadow                                 |
-| bgSize      | [String, Number] | `40`          | Background size                                                 |
-| patternSize | [String, Number] | `3`           | Pattern size                                                    |
-| color1      | String           | `#504D2E`     | Main color of pattern                                           |
-| color2      | String           | `transparent` | Secondary color of pattern (Only valid for dots and lines)      |
-| bgColor     | String           | `transparent` | Background color                                                |
-| degree      | [String, Number] | `45`          | Degree (Only valid for diagonal)                                |
-| reverse     | Boolean          | `false`       | Reverse z-index between pattern and image                       |
+| Name        | Type             | Default       | Description                                                  |
+| ----------- | ---------------- | ------------- | ------------------------------------------------------------ |
+| type        | String           | `dots`        | Type of pattern [dots, lines, diagonal]                      |
+| position    | String           | `bottomLeft`  | Shadow position [bottomLeft, bottomRight, topLeft, topRight] |
+| margin      | [String, Number] | `50`          | Margin between image and shadow                              |
+| bgSize      | [String, Number] | `40`          | Background size                                              |
+| patternSize | [String, Number] | `3`           | Pattern size                                                 |
+| color1      | String           | `#504D2E`     | Main color of pattern                                        |
+| color2      | String           | `transparent` | Secondary color of pattern (Only valid for dots and lines)   |
+| bgColor     | String           | `transparent` | Background color                                             |
+| degree      | [String, Number] | `45`          | Degree (Only valid for diagonal)                             |
+| reverse     | Boolean          | `false`       | Reverse z-index between pattern and image                    |
 
 ### License
 
