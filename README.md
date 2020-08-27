@@ -11,10 +11,10 @@ Styled shadows for images. Supports SSR and IE11!
 <img src="./vue-toggles.jpg" alt="Vue Toggles Logo"/>
 </p> -->
 
-<!-- ## Demo
+## Demo
 
-- [Demo](https://vue-toggles.netlify.app/)
-- [CodeSandbox](https://codesandbox.io/s/vue-toggles-mkkp4?file=/src/App.vue) -->
+- [Demo](https://vue-styled-shadows.netlify.app/)
+  <!-- - [CodeSandbox](https://codesandbox.io/s/vue-toggles-mkkp4?file=/src/App.vue) -->
 
 ## Installation
 
