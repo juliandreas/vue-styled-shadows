@@ -115,9 +115,7 @@ section {
 }
 
 img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
+  width: 100%;
   // clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 

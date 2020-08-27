@@ -37,7 +37,7 @@ You can use the library without any props and it will use the default settings (
 
 ```html
 <VueStyledShadows>
-  <img />
+  <img style="width: 100%;" />
 </VueStyledShadows>
 ```
 
@@ -47,7 +47,7 @@ You can also add more props to customize things like type, color and size etc.
 
 ```html
 <VueStyledShadows type="lines" position="bottomRight" margin="50" patternSize="3">
-  <img />
+  <img style="width: 100%;" />
 </VueStyledShadows>
 ```
 
