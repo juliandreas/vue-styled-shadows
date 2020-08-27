@@ -1,5 +1,5 @@
 <template>
-  <div class="vue-styled-shadows" style="display: flex; position: relative; overflow: hidden;">
+  <div class="vue-styled-shadows">
     <div :style="patternStyle" />
     <div :style="containerStyle">
       <slot></slot>
@@ -119,3 +119,11 @@ export default {
   }
 };
 </script>
+
+<style>
+.vue-styled-shadows {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+</style>

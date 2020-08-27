@@ -1,0 +1,6 @@
+
+.vue-styled-shadows {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}

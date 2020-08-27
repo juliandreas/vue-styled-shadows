@@ -28,10 +28,10 @@ export default [
       file: 'dist/vue-styled-shadows.ssr.js'
     },
     plugins: [
-      css(),
       vue({
         css: false // Disable css injecting as a <style> tag
       }),
+      css(),
       commonjs(),
       buble(),
       filesize()
