@@ -26,9 +26,6 @@
         <label for="patternSize">Pattern Size (patternSize)</label>
         <input id="patternSize" v-model="patternSize" type="number" />
 
-        <label for="patternSize">Pattern Size (patternSize)</label>
-        <input id="patternSize" v-model="patternSize" type="number" />
-
         <label for="color1">Color (color1)</label>
         <input id="color1" v-model="color1" type="color" />
 
