@@ -114,10 +114,9 @@ section {
   }
 }
 
-img {
-  width: 100%;
-  // clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-}
+/* img {
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+} */
 
 /* .vue-styled-shadows {
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);

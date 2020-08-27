@@ -126,4 +126,8 @@ export default {
   position: relative;
   overflow: hidden;
 }
+
+.vue-styled-shadows img {
+  width: 100%;
+}
 </style>

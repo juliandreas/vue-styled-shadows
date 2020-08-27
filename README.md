@@ -1,6 +1,6 @@
 <h1 align="center">Vue Styled Shadows</h1>
 <p align="center">
-Styled shadows for images. Supports IE11!
+Styled shadows for images. Supports SSR and IE11!
 </p>
 
 <p align="center">
@@ -31,13 +31,23 @@ import VueStyledShadows from 'vue-styled-shadows';
 Vue.component('VueStyledShadows', VueStyledShadows);
 ```
 
+### SSR import (Nuxt for example)
+
+```javascript
+import Vue from 'vue';
+import VueStyledShadows from 'vue-styled-shadows/dist/vue-styled-shadows.ssr';
+import 'vue-styled-shadows/dist/vue-styled-shadows.ssr.css';
+
+Vue.component('VueStyledShadows', VueStyledShadows);
+```
+
 ## Usage
 
 You can use the library without any props and it will use the default settings (see properties below).
 
 ```html
 <VueStyledShadows>
-  <img style="width: 100%;" />
+  <img />
 </VueStyledShadows>
 ```
 
@@ -47,7 +57,7 @@ You can also add more props to customize things like type, color and size etc.
 
 ```html
 <VueStyledShadows type="lines" position="bottomRight" margin="50" patternSize="3">
-  <img style="width: 100%;" />
+  <img />
 </VueStyledShadows>
 ```
 
