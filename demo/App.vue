@@ -58,10 +58,7 @@
           :degree="degree"
           :reverse="reverse"
         >
-          <img
-            src="https://images.unsplash.com/photo-1529426944611-e8342e2e91c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-            alt=""
-          />
+          <img src="./house.jpg" alt="House" />
         </VueStyledShadows>
       </div>
     </section>
@@ -96,7 +93,6 @@ body {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #000;
@@ -111,6 +107,20 @@ section {
     flex-direction: column;
     width: 50%;
     padding: 50px;
+  }
+
+  input,
+  select {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #d2d6dc;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 12px;
+    margin-bottom: 8px;
   }
 }
 

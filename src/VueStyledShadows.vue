@@ -65,11 +65,9 @@ export default {
       };
 
       if (this.type === 'dots') {
-        styles.backgroundImage = `radial-gradient(${this.color1} ${this.patternSize}px, transparent ${this.patternSize}px),
-        radial-gradient(${this.color2} ${this.patternSize}px, transparent ${this.patternSize}px)`;
+        styles.backgroundImage = `radial-gradient(${this.color1} ${this.patternSize}px, transparent ${this.patternSize}px), radial-gradient(${this.color2} ${this.patternSize}px, transparent ${this.patternSize}px)`;
       } else if (this.type === 'lines') {
-        styles.backgroundImage = `linear-gradient(${this.color1} ${this.patternSize}px, transparent ${this.patternSize}px),
-        linear-gradient(${this.color2} ${this.patternSize}px, transparent ${this.patternSize}px)`;
+        styles.backgroundImage = `linear-gradient(${this.color1} ${this.patternSize}px, transparent ${this.patternSize}px), linear-gradient(${this.color2} ${this.patternSize}px, transparent ${this.patternSize}px)`;
       } else if (this.type === 'diagonal') {
         styles.backgroundImage = `repeating-linear-gradient(${this.degree}deg, ${this.color1} 0, ${this.color1} ${this.patternSize}px, transparent 0, transparent 50%)`;
       }
