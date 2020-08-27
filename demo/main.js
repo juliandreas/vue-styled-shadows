@@ -7,5 +7,5 @@ Vue.component('VueStyledShadows', VueStyledShadows);
 Vue.config.productionTip = false;
 
 new Vue({
-  render: (h) => h(App),
+  render: (h) => h(App)
 }).$mount('#app');
