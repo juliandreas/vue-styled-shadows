@@ -1,6 +1,6 @@
 <template>
   <div class="vue-styled-shadows">
-    <div :style="patternStyle" />
+    <div :id="vssid" :class="vssclass" :style="patternStyle" />
     <div :style="containerStyle">
       <slot></slot>
     </div>
@@ -49,6 +49,14 @@ export default {
     reverse: {
       type: Boolean,
       default: false
+    },
+    vssid: {
+      type: String,
+      default: null
+    },
+    vssclass: {
+      type: String,
+      default: null
     }
   },
   computed: {
