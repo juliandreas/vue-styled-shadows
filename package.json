@@ -1,6 +1,6 @@
 {
   "name": "vue-styled-shadows",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": "Julian Lagerberg <juliandreas@hey.com>",
   "private": false,
   "license": "MIT",
@@ -80,6 +80,9 @@
     "csspattern",
     "background",
     "image",
-    "library"
+    "library",
+    "shadowpattern",
+    "shadow",
+    "styled shadows"
   ]
 }

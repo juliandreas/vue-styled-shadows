@@ -130,10 +130,16 @@ export default {
 .vue-styled-shadows {
   display: flex;
   position: relative;
-  overflow: hidden;
 }
 
 .vue-styled-shadows img {
   width: 100%;
+}
+
+@media all and (-ms-high-contrast: none) {
+  .vue-styled-shadows {
+    /* IE11 fix */
+    height: 100%;
+  }
 }
 </style>
