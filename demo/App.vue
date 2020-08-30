@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>Vue Styled Shadows</h1>
     <section>
       <div class="block">
         <label for="type">Type (type)</label>
@@ -62,12 +63,19 @@
         </VueStyledShadows>
       </div>
     </section>
+
+    <Inspiration />
   </div>
 </template>
 
 <script>
+import Inspiration from './Inspiration.vue';
+
 export default {
   name: 'App',
+  components: {
+    Inspiration
+  },
   data: () => ({
     type: 'dots',
     position: 'bottomLeft',
