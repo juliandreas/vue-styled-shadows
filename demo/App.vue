@@ -22,10 +22,10 @@
         <input id="margin" v-model="margin" type="number" />
 
         <label for="bgSize">Background Size (bgSize)</label>
-        <input id="bgSize" v-model="bgSize" type="number" />
+        <input id="bgSize" v-model="bgSize" type="number" min="0" />
 
         <label for="patternSize">Pattern Size (patternSize)</label>
-        <input id="patternSize" v-model="patternSize" type="number" />
+        <input id="patternSize" v-model="patternSize" type="number" min="0" />
 
         <label for="color1">Color (color1)</label>
         <input id="color1" v-model="color1" type="color" />
